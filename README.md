@@ -2,6 +2,14 @@
 
 Windows WPF 桌面程式。框選遊戲畫面左下角的旋律提示音符列後，程式會每 250 ms 以內附音符圖示樣板辨識最多四列，再依目前譜面更新效果計時。
 
+## 下載並直接執行
+
+一般使用者請前往 [GitHub Releases](https://github.com/Suyuloop/MHXX_HornMelodyTimer/releases/latest)，下載 `MHXX-HornMelodyTimer-v1.0.0-win-x64.zip` 並解壓縮。雙擊資料夾中的 `HornMelodyTimer.exe` 即可啟動，不需另外安裝 .NET。此版本提供 Windows x64；首次執行時若 Windows SmartScreen 顯示警告，請先確認檔案是從本專案 Releases 下載，再選擇「仍要執行」。
+
+## 從原始碼執行
+
+開發者可安裝 .NET 10 SDK 後執行 `dotnet run --project HornMelodyTimer.csproj`。要自行產生免安裝 Windows x64 版本，可執行 `dotnet publish HornMelodyTimer.csproj -p:PublishProfile=win-x64`。
+
 ## 使用方式
 
 1. 執行 `dotnet run --project HornMelodyTimer.csproj`。
